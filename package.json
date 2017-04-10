@@ -1,0 +1,15 @@
+{
+  "name": "webpack-hot-reload",
+  "author": "zhenyong <116982086@qq.com>",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "dev": "rimraf ./build & webpack -w & node build/bundle.js"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "rimraf": "^2.6.1",
+    "webpack": "^2.3.3"
+  }
+}
