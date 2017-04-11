@@ -5,11 +5,11 @@ const webpack = require('webpack');
 module.exports = {
     entry: [
         'webpack/hot/poll?1000',
-        './src/demoA/main.js'],
+        './src/demoB/main.js'],
     target: 'node',
     output: {
         path: path.join(__dirname, 'build'),
-        filename: 'demoA.js'
+        filename: 'demoB.js'
     },
     plugins: [
         new webpack.NamedModulesPlugin(),

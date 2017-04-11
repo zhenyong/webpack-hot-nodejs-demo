@@ -5,12 +5,17 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "buildA": "rimraf ./build && webpack -w --config demoA.webpack.config.js",
-    "runA": "node build/demoA"
+    "buildA": "rimraf ./build && webpack -w --config demoA.webpack.config.js --hot",
+    "buildB": "rimraf ./build && webpack -w --config demoB.webpack.config.js --hot",
+    "runA": "node build/demoA",
+    "runB": "node build/demoB"
   },
   "license": "ISC",
   "devDependencies": {
     "rimraf": "^2.6.1",
     "webpack": "^2.3.3"
+  },
+  "dependencies": {
+    "walk-sync": "^0.3.1"
   }
 }
