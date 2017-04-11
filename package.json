@@ -5,7 +5,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "dev": "rimraf ./build & webpack -w & node build/bundle.js"
+    "buildA": "rimraf ./build && webpack -w --config demoA.webpack.config.js",
+    "runA": "node build/demoA"
   },
   "license": "ISC",
   "devDependencies": {

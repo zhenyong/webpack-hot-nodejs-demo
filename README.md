@@ -7,6 +7,8 @@ Webpack HMR demo use in Node.js, showing how to auto add/remove listeners.
 # install deps
 npm install
 
-# build and run
-npm run dev
+# in one command window
+npm run buildA
+# in another command window
+npm run runA
 ```
